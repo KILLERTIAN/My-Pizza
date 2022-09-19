@@ -137,3 +137,11 @@ document.addEventListener('DOMContentLoaded', () => {
     .setPin('.forth-section')
     .addTo(controller);
 })
+// to scroll website to top when refreshed
+if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual';
+} else {
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    }
+}

@@ -315,7 +315,11 @@ p {
     ::-webkit-scrollbar-track {
         background: #f0f5ff3a;
     }
-
+    body{
+        width: 100vw;
+        height: 100%;
+        overflow-x: hidden;
+    }
     .navbar {
         position: absolute;
         height: 8vh;
@@ -341,8 +345,8 @@ p {
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         background: white;
         z-index: 1;
         flex-direction: column;
@@ -429,8 +433,10 @@ p {
         height: 60%;
     }
     .first-section .section_1_bg{
-        margin-top: 30vh;
-        height: 90vh;
+        /* margin-top: 30vh; */
+        margin-top: 200px;
+        /* height: 90vh; */
+        height: 620px;
     }
     .section_1_01 {
         position: absolute;

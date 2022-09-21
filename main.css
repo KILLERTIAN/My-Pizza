@@ -110,10 +110,20 @@ p {
     height: 92vh;
     object-fit: cover;
 }
+.hero-section h2{
+    font-size: 2.5em;
+}
 
 .hero-section p {
+    font-size: 24px;
     color: #fff;
     font-weight: 300;
+}
+.hero-section .carousel-caption{
+    position: absolute;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.13);
+    border-radius: 10px;
 }
 
 .first-section {
@@ -401,6 +411,9 @@ p {
     .hero-section h2{
         font-size: 2em;
     }
+    /* .hero-section .carousel-caption{
+        max-width: 80vw;
+    } */
 
     .first-section {
         position: relative;
@@ -555,9 +568,38 @@ p {
         margin-bottom: 0;
     }
 }
-@media (max-width: 600px){
+@media (max-width: 400px){
+    body{
+        height: 100vh;
+        width: 100vw;
+        overflow-x: hidden !important;
+    }
+    .first-section .section_1_bg{
+        margin-top: 400px;
+    }
+    .first-section .ingredient-images{
+        margin-top: 200px;
+    }
+    .second-section{
+        height: 150vh;
+    }
+    .second-section h1{
+        margin-top: 400px;
+        font-size: 2.5em;
+        letter-spacing: 0.5px;
+    }
     .second-section img {
         height: 80px;
         width: 80px;
+    }
+    .second-section .images-wrapper{
+        top: 70%;
+    }
+    .third-section{
+        width: 100vw;
+    }
+    .forth-section .images-wrapper img{
+        width: 400px;
+
     }
 }
